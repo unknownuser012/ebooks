@@ -1,0 +1,583 @@
+<html>
+<head>
+<title>Chemistry E-books</title>
+<link rel="shortcut icon"  href="https://srichaitanyaebooks.ml/icon.ico"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+.button1 {
+  background-color: #E94B3CFF;
+  position:relative;
+  left:55px;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  font-size:17px;
+  border-radius: 8px;
+}
+/* Set a style for all buttons */
+.button-btn1 {
+ background-color: #E94B3CFF;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+ position: relative;
+   top:-65px;
+   left:1180px;
+  background-color: #E94B3CFF;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px 8px;
+  cursor: pointer;
+  font-size:15px;
+  width: 100%
+ 
+}
+.button-btn2 {
+ background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+  
+}
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  border-radius: 7px;
+  color:white;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+   border: none;
+  position: relative;
+  
+}
+
+
+.container1 {
+  padding: 16px;
+ 
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 80%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0px;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+
+  <body style="background-color:black";>
+
+
+
+<div class="name" >
+<h1> <a href="/index.html" style="text-decoration:none; color:white; font-size:35px;"> Sri Chaitanya IInd year E-Books </a></h1>
+</div>
+<div>
+<button class="button1  home" onclick="location.href='https://srichaitanyaebooks.ml/index.html';">HOME</button>
+</div>
+<button class="button-btn1" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login / Register
+</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="login.php" method="GET">
+   
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+  
+
+    <div class="container1">
+      <label for="Email"><b>E-mail or Phone Number</b></label>
+      <input type="text" placeholder="Email" name="Email" required>
+
+      <label for="1stpswd"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="1stpswd" required>
+        <label for="repeat-password"> <b> Repeat Password </b> </label>
+		<input type="password" placeholder="Repeat Password " name="2ndpswd" required>
+      <button class="button-btn2" type="submit">Register</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container1" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'"  class="cancelbtn">Cancel</button>
+      
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+<style>
+.header {
+  padding: 0.25px;
+  text-align: center;
+  background: #4caf50;
+  color: white;
+  font-size: 20px;
+}
+
+
+button:hover {
+  opacity: 0.8;
+}
+
+.name{
+   font-family:'Abel-regular';
+   font-size:15px;
+   color:white; 
+   padding-left:30px;
+   padding-top:0.05px;
+   text-align:center;
+   
+   
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #E94B3CFF;
+   color: white;
+   text-align: center;
+}
+
+.btn-group1 button {
+position:relative;
+left:30px;
+font-size:20px;
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  margin: 20px;
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 35%;
+  height:8%;  /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+}
+
+.btn-group1 button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group1 button:hover {
+  background-color: #3e8e41;
+}
+.heading1{
+ color:white;
+ padding-left:9%;
+ font-size :30px;
+ }
+
+</style>
+<body>
+<div>
+<pre class="heading1" >Chemistry Integrated                           Chemistry Objective</pre>
+
+</div>
+<div class="btn-group1">
+  <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II  Part-A</button>
+  <button id="CHI">Carbohydrates</button>
+  <button id="PNI">Proteins and Nucleic Acids</button>
+  <button id="PYI">Polymers</button>
+  <button id="CLI">Chemistry in EveryDay Life</button>
+  <button id="PCI">Practical Chemistry</button>
+  <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II  Part-B</button>
+  <button id="AAI"> Alkyl and Aryl Halides</button>
+  <button id="API">Alcohols Phenols and Ethers</button>
+  <button id="AKIN" onclick="not()">Aldehydes and Ketones</button>
+  <button id="CAI">Carboxylic Acids</button>
+  <button id="NCI">Nitrogen Compounds</button>
+  <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II  Part-C</button>
+  <button id="G5I">Group 15 Elements</button>
+  <button id="G6I">Group 16 Elements</button>
+  <button id="G7I">Group 17 Elements</button>
+  <button id="NGI">Noble Gases</button>
+  <button id="DFI">Elements of d & f Block</button>
+  <button id="CCI">Complex Compounds</button>
+  <button id="MLI">Metallurgy</button>
+  <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II  Part-D</button>
+  <button id="DSI">Dilute Solutions</button>
+  <button id="SSI">Solid State</button>
+  <button id="CKI">Chemical Kinetics</button>
+  <button id="ECI">Electro Chemistry</button>
+  <button id="SCI">Surface Chemistry</button>
+  
+</div>
+<style>
+.btn-group2 button {
+position:relative;
+top:-1797px;
+left:800px;
+font-size:20px;
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  margin: 20px;
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 35%;
+  height:8%;  /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+}
+
+.btn-group2 button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group2 button2:hover {
+  background-color: #3e8e41;
+}
+</style>
+<div class="btn-group2">
+  <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II Part-A</button>
+  <button id="CHON" onclick="not()">Carbohydrates</button>
+  <button id="PNO">Proteins and Nucleic Acids</button>
+  <button id="PYO">Polymers</button>
+  <button id="CLON" onclick="not()">Chemistry In EveryDay Life</button>
+  <button id="PCON" onclick="not()">Practical Chemistry</button>
+  <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II Part-B</button>
+  <button id="AAO">Alkyl and Aryl Halides</button>
+  <button id="APO">Alcohols Phenols and Ethers</button>
+  <button id="AKO">Aldehydes and Ketones</button>
+  <button id="CAO">Carboxylic Acids</button>
+  <button id="ACO">Amines and Azo Compounds</button>
+  <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II Part-C</button>
+  <button id="G5ON" onclick="not()">V A Group Elements</button>
+  <button id="G6O">VI A Group Elements</button>
+  <button id="G7ON" onclick="not()">VII A Group Elements</button>
+  <button id="NGON" onclick="not()">Noble Gases</button>
+  <button id="MLO">Metallurgy</button>
+  <button id="DFON" onclick="not()">d & f Block Elements</button>
+  <button id="CCON" onclick="not()">Co-ordination Compounds</button>
+  <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II Part-D</button>
+  <button id="SLO">Solutions</button>
+  <button id="CKO">Chemical Kinetics</button>
+  <button id="NCO">Nuclear Chemistry</button>
+  <button id="ECO">Electro Chemistry</button>
+  <button id="SSO">Solid State</button>
+  <button id="SCO">Surface Chemistry</button>
+
+</div>
+
+<div class="footer">
+  <p style="font-weight: bold;" >Created by a Frustated🔥 Sri Chaitanya Student.</p>
+</div>
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script>
+const clientId = "0ac17c895d3f4efc807501d03adbe09b";
+const viewerOptions = {
+    embedMode: "LIGHT_BOX",
+    defaultViewMode: "FIT_PAGE",
+    showDownloadPDF: false,
+    showPrintPDF: false
+};
+
+function fetchPDF(urlToPDF) {
+    return new Promise((resolve) => {
+        fetch(urlToPDF)
+            .then((resolve) => resolve.blob())
+            .then((blob) => {
+                resolve(blob.arrayBuffer());
+            })
+    })
+}
+
+function showPDF(urlToPDF) {
+    var adobeDCView = new AdobeDC.View({
+            clientId: clientId
+        });
+        var previewFilePromise = adobeDCView.previewFile(
+            {
+                content: { promise: fetchPDF(urlToPDF) },
+                metaData: { fileName: urlToPDF.split("/").slice(-1)[0] }
+            },
+            viewerOptions
+        );
+}
+
+document.addEventListener("adobe_dc_view_sdk.ready", function () {
+    document.getElementById("CHI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/CarbohydratesIntegrated.pdf")
+    });
+    document.getElementById("PNI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/ProteinsandNuclueicAcidIntegrated.pdf")
+    });
+    document.getElementById("PYI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/PolymersIntegrated.pdf")
+    });
+	document.getElementById("CLI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/ChemistryinEverydayIntegrated.pdf")
+    });
+    document.getElementById("PCI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/PracticalChemistryIntegrated.pdf")
+    });
+    document.getElementById("AAI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/AlkylandAlydeIntegrated.pdf")
+    });
+	document.getElementById("API").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/AlcoholsandPhenolsIntegrated.pdf")
+    });
+    document.getElementById("AKI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+    document.getElementById("CAI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/CarboxylicAcidsIntegrated.pdf")
+    });
+	document.getElementById("NCI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/NitrogenCompoundsIntegrated.pdf")
+    });
+    document.getElementById("G5I").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/Group15Integrated.pdf")
+    });
+    document.getElementById("G6I").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/Group16Integrated.pdf")
+    });
+	document.getElementById("G7I").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/Group17Integrated.pdf")
+    });
+    document.getElementById("NGI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/NoblegasesIntegrated.pdf")
+    });
+    document.getElementById("DFI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/Elementsofd&fIntegrated.pdf")
+    });
+	document.getElementById("CCI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/ComplexCompoundsIntegrated.pdf")
+    });
+    document.getElementById("MLI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/MetallurgyIntegrated.pdf")
+    });
+    document.getElementById("DSI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/DilutesolutionsIntegrated.pdf")
+    });
+	document.getElementById("SSI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/SolidstateIntegrated.pdf")
+    });
+    document.getElementById("CKI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/ChemicalKineticsIntegrated.pdf")
+    });
+    document.getElementById("ECI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/ElectroChemistryIntegrated.pdf")
+    });
+	document.getElementById("SCI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/SurfaceChemistryIntegrated.pdf")
+    });
+    document.getElementById("CHO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+    document.getElementById("PNO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/ProteinsandNuclueicAcidObjective.pdf")
+    });
+	document.getElementById("PYO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/PolymersObjective.pdf")
+    });
+    document.getElementById("CLO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+    document.getElementById("PCO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+	document.getElementById("AAO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/AlkylandAlydeObjective.pdf")
+    });
+    document.getElementById("APO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/AlcoholsandPhenolsObjective.pdf")
+    });
+    document.getElementById("AKO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/AldehydesandkeytonesObjective.pdf")
+    });
+	document.getElementById("CAO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/CarboxylicAcidsObjective.pdf")
+    });
+    document.getElementById("ACO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/NitrogenCompoundsObjective.pdf")
+    });
+    document.getElementById("G5O").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+	document.getElementById("G6O").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/Group16Objective.pdf")
+    });
+    document.getElementById("G7O").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+    document.getElementById("NGO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+	document.getElementById("MLO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/MetallurgyObjective.pdf")
+    });
+    document.getElementById("DFO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+    document.getElementById("CCO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+	document.getElementById("SLO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/DilutesolutionsObjective.pdf")
+    });
+    document.getElementById("CKO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/ChemicalKineticsObjective.pdf")
+    });
+    document.getElementById("NCO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/NuclearChemistryObjective.pdf")
+    });
+	document.getElementById("ECO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/ElectroChemistryObjective.pdf")
+    });
+    document.getElementById("SSO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/SolidstateObjective.pdf")
+    });
+    document.getElementById("SCO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/SurfaceChemistryObjective.pdf")
+    });
+});
+
+// Add arrayBuffer if necessary i.e. Safari
+(function () {
+    if (Blob.arrayBuffer != "function") {
+        Blob.prototype.arrayBuffer = myArrayBuffer;
+    }
+
+    function myArrayBuffer() {
+        return new Promise((resolve) => {
+            let fileReader = new FileReader();
+            fileReader.onload = () => {
+                resolve(fileReader.result);
+            };
+            fileReader.readAsArrayBuffer(this);
+        });
+    }
+})();
+</script>
+<script>
+function not() {
+  alert("Sorry this PDF is not Avaliable now. It will be avaliable soon!.");
+}
+</script>
+
+</html>

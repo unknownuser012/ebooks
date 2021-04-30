@@ -1,0 +1,545 @@
+<html>
+<head>
+<title>Physics E-books</title>
+<link rel="shortcut icon"  href="https://srichaitanyaebooks.ml/icon.ico"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+.button1 {
+  background-color: #E94B3CFF;
+  position:relative;
+  left:55px;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  font-size:17px;
+  border-radius: 8px;
+}
+/* Set a style for all buttons */
+.button-btn1 {
+ background-color: #E94B3CFF;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+ position: relative;
+   top:-65px;
+   left:1180px;
+  background-color: #E94B3CFF;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px 8px;
+  cursor: pointer;
+  font-size:15px;
+  width: 100%
+ 
+}
+.button-btn2 {
+ background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+  
+}
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  border-radius: 7px;
+  color:white;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+   border: none;
+  position: relative;
+  
+}
+
+
+.container1 {
+  padding: 16px;
+ 
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 80%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0px;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+
+  <body style="background-color:black";>
+
+
+
+<div class="name" >
+<h1> <a href="/index.html" style="text-decoration:none; color:white; font-size:35px;"> Sri Chaitanya IInd year E-Books </a></h1>
+</div>
+<div>
+<button class="button1  home" onclick="location.href='https://srichaitanyaebooks.ml/index.html;">HOME</button>
+</div>
+<button class="button-btn1" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login / Register
+</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="login.php" method="GET">
+   
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+  
+
+    <div class="container1">
+      <label for="Email"><b>E-mail or Phone Number</b></label>
+      <input type="text" placeholder="Email" name="Email" required>
+
+      <label for="1stpswd"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="1stpswd" required>
+        <label for="repeat-password"> <b> Repeat Password </b> </label>
+		<input type="password" placeholder="Repeat Password " name="2ndpswd" required>
+      <button class="button-btn2" type="submit">Register</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container1" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'"  class="cancelbtn">Cancel</button>
+      
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+<style>
+.header {
+  padding: 0.25px;
+  text-align: center;
+  background: #4caf50;
+  color: white;
+  font-size: 20px;
+}
+
+
+button:hover {
+  opacity: 0.8;
+}
+
+.name{
+   font-family:'Abel-regular';
+   font-size:15px;
+   color:white; 
+   padding-left:30px;
+   padding-top:0.05px;
+   text-align:center;
+   
+   
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #E94B3CFF;
+   color: white;
+   text-align: center;
+}
+
+.btn-group1 button {
+position:relative;
+left:30px;
+  background-color: #4CAF50; /* Green background */
+  font-size:20px;
+  
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  margin: 20px;
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 35%;
+  height:8%;  /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+}
+
+.btn-group1 button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group1 button:hover {
+  background-color: #3e8e41;
+}
+.heading1{
+ color:white;
+ padding-left:10%;
+ font-size :30px;
+ }
+ 
+</style>
+<body>
+<div>
+<pre class="heading1" >Physics Integrated                              Physics Objective</pre>
+
+</div>
+<div class="btn-group1">
+ <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II  Part-A</button>
+  <button id="EFI">Electric Field</button>
+  <button id="GLI">Gauss Law</button>
+  <button id="CPI">Capacitors</button>
+  <button id="CEI">Current Electricity</button>
+  <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II Part-B</button>
+  <button id="MGI">Magnetism</button>
+  <button id="EMI">Electromagnetics</button>
+  <button id="EII">Electromagnetic Induction</button>
+  <button id="ACI">Alternating Current</button>
+  <button id="EWIN" onclick="not()">Electromagnetic Waves</button>
+<button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II Part-C</button>
+  <button id="WMI">Wave Motion and Sound</button>
+  <button id="ROI">Ray Optics</button>
+  <button id="OIIN" onclick="not()">Optical Instruments</button>
+  <button id="WOIN" onclick="not()">Wave Optics</button>
+  <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II Part-D</button>
+  <button id="API">Atomic Physics</button>
+  <button id="NPI">Nuclear Physics</button>
+  <button id="SCI">Semi Conductors</button>
+  <button id="LGI">Logic Gates</button>
+  <button id="CSI">Commumication Systems</button>
+
+</div>
+<style>
+.btn-group2 button {
+position:relative;
+top:-1520px;
+left:800px;
+font-size:20px;
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  margin: 20px;
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 35%;
+  height:8%;  /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+}
+
+.btn-group2 button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group2 button2:hover {
+  background-color: #3e8e41;
+}
+</style>
+<div class="btn-group2">
+  <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II Part-A</button>
+  <button id="ESON" onclick="not()">Electrostatics</button>
+  <button id="CPON" onclick="not()">Capacitors</button>
+  <button id="CEON" onclick="not()">Current Electricity</button>
+  <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II Part-B</button>
+  <button id="MGO">Magnetism</button>
+  <button id="EMO">Electromagnetism</button>
+  <button id="EIO">Electromagnetic Induction</button>
+  <button id="ACO">Alternating Current</button>
+  <button id="EWO">Electromagnetic Waves</button>
+  <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II Part-C</button>
+  <button id="WMON" onclick="not()">Wave Motion</button>
+  <button id="GOO">Geometrical Optics</button>
+  <button id="OION" onclick="not()">Optical Instruments</button>
+  <button id="WOON" onclick="not()">Wave Optics</button>
+  <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II Part-D</button>
+  <button id="APO">Atomic Physics</button>
+  <button id="NPO">Nuclear Physics</button>
+  <button id="SCO">Semi Conductors Devices</button>
+  <button id="CSO">Commumication Systems</button>
+  <button id="PPO">Practical Physics</button>
+
+</div>
+
+<div class="footer">
+  <p style="font-weight: bold;" >Created by a Frustated🔥 Sri Chaitanya Student.</p>
+</div>
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script>
+const clientId = "0ac17c895d3f4efc807501d03adbe09b";
+const viewerOptions = {
+    embedMode: "LIGHT_BOX",
+    defaultViewMode: "FIT_PAGE",
+    showDownloadPDF: false,
+    showPrintPDF: false
+};
+
+function fetchPDF(urlToPDF) {
+    return new Promise((resolve) => {
+        fetch(urlToPDF)
+            .then((resolve) => resolve.blob())
+            .then((blob) => {
+                resolve(blob.arrayBuffer());
+            })
+    })
+}
+
+function showPDF(urlToPDF) {
+    var adobeDCView = new AdobeDC.View({
+            clientId: clientId
+        });
+        var previewFilePromise = adobeDCView.previewFile(
+            {
+                content: { promise: fetchPDF(urlToPDF) },
+                metaData: { fileName: urlToPDF.split("/").slice(-1)[0] }
+            },
+            viewerOptions
+        );
+}
+
+document.addEventListener("adobe_dc_view_sdk.ready", function () {
+    document.getElementById("EFI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/ElectricFieldandPotentialIntegrated.pdf")
+    });
+    document.getElementById("GLI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/GaussLawIntegrated.pdf")
+    });
+    document.getElementById("CPI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/CapacitorsIntegrated.pdf")
+    });
+	document.getElementById("CEI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/CurrentElectricityIntegrated.pdf")
+    });
+    document.getElementById("MGI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/MagnetismIntegrated.pdf")
+    });
+    document.getElementById("EMI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/ElectroMagneticsIntegrated.pdf")
+    });
+	document.getElementById("EII").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/ElectroMagneticInductionIntegrated.pdf")
+    });
+    document.getElementById("ACI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/AlternatingCurrentIntegrated.pdf")
+    });
+    document.getElementById("EWI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+	document.getElementById("WMI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/WavemotionIntegrated.pdf")
+    });
+    document.getElementById("ROI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/RayopticsIntegrated.pdf")
+    });
+    document.getElementById("OII").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+	document.getElementById("WOI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+    document.getElementById("API").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/AtomicphysicsIntegrated.pdf")
+    });
+    document.getElementById("NPI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/NuclearPhysicsIntegrated.pdf")
+    });
+	document.getElementById("SCI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/SemiConductorsIntegrated.pdf")
+    });
+    document.getElementById("LGI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/LogicGatesIntegrated.pdf")
+    });
+    document.getElementById("CSI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/CommumicationSystemsIntegrated.pdf")
+    });
+	document.getElementById("ESO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+    document.getElementById("CPO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+    document.getElementById("CEO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+	document.getElementById("MGO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/MagnetismObjective.pdf")
+    });
+    document.getElementById("EMO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/ElectroMagneticsObjective.pdf")
+    });
+    document.getElementById("EIO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/ElectroMagneticInductionObjective.pdf")
+    });
+	document.getElementById("ACO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/AlternatingCurrentObjective.pdf")
+    });
+    document.getElementById("EWO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/ElectroMagneticWavesObjective.pdf")
+    });
+    document.getElementById("WMO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+	document.getElementById("GOO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/RayopticsObjective.pdf")
+    });
+    document.getElementById("OIO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+    document.getElementById("WOO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+	document.getElementById("APO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/AtomicphysicsObjective.pdf")
+    });
+    document.getElementById("NPO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/NuclearPhysicsObjective.pdf")
+    });
+    document.getElementById("SCO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/SemiConductorsObjective.pdf")
+    });
+	document.getElementById("CSO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/CommumicationSystemsObjective.pdf")
+    });
+    document.getElementById("PPO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/PracticalPhysicsObjective.pdf")
+    });
+ 
+});
+
+// Add arrayBuffer if necessary i.e. Safari
+(function () {
+    if (Blob.arrayBuffer != "function") {
+        Blob.prototype.arrayBuffer = myArrayBuffer;
+    }
+
+    function myArrayBuffer() {
+        return new Promise((resolve) => {
+            let fileReader = new FileReader();
+            fileReader.onload = () => {
+                resolve(fileReader.result);
+            };
+            fileReader.readAsArrayBuffer(this);
+        });
+    }
+})();
+</script>
+<script>
+function not() {
+  alert("Sorry this PDF is not Avaliable now. It will be avaliable soon!.");
+}
+</script>
+
+</html>
