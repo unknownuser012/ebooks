@@ -50,17 +50,6 @@ input[type=text], input[type=password] {
       
  
 }
-    @media only screen and (max-width: 600px) {
-        .button-btn1{
-            position: absolute;
-            top: 110px;
-            left:260px;
-            font-size: 15px;
-            padding: 12px;
-        }
-      
-            
-        }
 .button-btn2 {
  background-color: #4CAF50;
   color: white;
@@ -132,7 +121,7 @@ span.psw {
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and cente#E94B3CFF */
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
   width: 60%; /* Could be more or less, depending on screen size */
 }
@@ -149,7 +138,7 @@ span.psw {
 
 .close:hover,
 .close:focus {
-  color: #E94B3CFF;
+  color: red;
   cursor: pointer;
 }
 
@@ -201,12 +190,12 @@ span.psw {
 
     <div class="container1">
       <label for="Email"><b>E-mail or Phone Number</b></label>
-      <input type="text" placeholder="Email" name="Email" requi#E94B3CFF>
+      <input type="text" placeholder="Email" name="Email" required>
 
       <label for="1stpswd"><b>Password</b></label>
-      <input type="password" id="passwd" placeholder="Enter Password" name="1stpswd" requi#E94B3CFF>
+      <input type="password" id="passwd" placeholder="Enter Password" name="1stpswd" required>
         <label for="repeat-password"> <b> Repeat Password </b> </label>
-		<input type="password" placeholder="Repeat Password " name="2ndpswd" requi#E94B3CFF>
+		<input type="password" placeholder="Repeat Password " name="2ndpswd" required>
       <button class="button-btn2" type="submit">Register</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -258,10 +247,6 @@ body {
     align-content: center;
     justify-content: center;
 }
-    @media only screen and (max-width: 600px) {
-        .container2 {
-            height:70%
-        }
 
 .buttonHolder {
     display: flex;
@@ -284,14 +269,6 @@ body {
     cursor: pointer;
     display: block;
 }
-        @media only screen and (max-width: 600px) {
-            .button-sub{
-                font-size:19px;
-                padding: 10px 70px;
-                
-                
-            }
-        }
 .button2 {
     background-color: #4CAF50;
     border: none;
@@ -305,15 +282,6 @@ body {
     cursor: pointer;
     display: block;
 }
-        @media only screen and (max-width: 600px) {
-            .button2 {
-                font-size: 19px;
-                padding: 10px 62px;
-            }
-        
-        
-        }
-        
 .button3 {
     background-color: #4CAF50;
     border: none;
@@ -327,13 +295,6 @@ body {
     cursor: pointer;
     display: block;
 }
-        @media only screen and (max-width: 600px) {
-            .button3{
-                font-size: 19px;
-                padding: 10px 50px;
-        }
-        
-        }
 button:hover {
   opacity: 0.8;
 }
@@ -348,10 +309,6 @@ button:hover {
    
    
 }
-    @media only screen and (max-width: 600px) {
-        .name{
-            font-size: 15px;
-        }
 .footer {
    position: fixed;
    left: 0;
@@ -361,13 +318,6 @@ button:hover {
    color: white;
    text-align: center;
 }
-        @media only screen and (max-width: 600px) {
-            .footer{
-                left: 0;
-                bottom: 100px;
-                font-size:13px;
-                
-            }
 </style>
 
 <div class="container2">
