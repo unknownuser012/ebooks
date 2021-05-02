@@ -17,10 +17,10 @@ input[type=text], input[type=password] {
   border-radius: 7px;
   box-sizing: border-box;
 }
-.button1 {
+.button1-home {
   background-color: #E94B3CFF;
-  position:relative;
-  left:55px;
+  position:absolute;
+  left:60px;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -29,7 +29,20 @@ input[type=text], input[type=password] {
   width: 10%;
   font-size:17px;
   border-radius: 8px;
+    text-align: center;
 }
+    @media only screen and (max-width: 600px) {
+        .button1-home {
+            width:20%;
+            font-size:15px;
+            border-radius: 5px;
+            left:30px;
+            top:18%;
+            padding: 10px;
+            
+            
+        }
+        }
 /* Set a style for all buttons */
 .button-btn1 {
  background-color: #E94B3CFF;
@@ -39,27 +52,21 @@ input[type=text], input[type=password] {
   border: none;
   cursor: pointer;
   width: 100%;
- position: relative;
-   top:-65px;
-   left:1180px;
-  background-color: #E94B3CFF;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
+  position: relative;
+  top:0;
+  left:1180px;
   border-radius: 8px 8px;
-  cursor: pointer;
   font-size:15px;
-  width: 100%
+
  
 }
     @media only screen and (max-width: 600px) {
         .button-btn1{
             position: absolute;
-            top: 20%;
-            left: 70%;
-            padding: 10px;
-            font-size: 18px;
+            top: 18%;
+            left: 63%;
+            padding: 8px;
+            font-size: 15px;
             
         }
         }
@@ -132,11 +139,10 @@ span.psw {
 }
     @media only screen and (max-width: 600px) {
     .modal{
-        width:130%;
-        left:-80px;
+        width:150%;
+        left:-90px;
     }
     }
-
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
@@ -154,11 +160,10 @@ span.psw {
   font-size: 50px;
   font-weight: bold;
 }
-@media only screen and (max-width: 600px) {
-    .close{
-        right: 90px;
-        top:60px;
-        font-size: 40px;
+    @media only screen and (max-width: 600px) {
+    .close{ 
+        display:none;
+        
         
     }
     }
@@ -204,14 +209,14 @@ span.psw {
 <h1> <a href="/index.html" style="text-decoration:none; color:white; font-size:35px;"> Sri Chaitanya IInd year E-Books </a></h1>
 </div>
 <div>
-<button class="button1 home" onclick="location.href='https://srichaitanyaebooks.ml/index.html';">HOME</button>
+<button class="button1-home" onclick="location.href='https://srichaitanyaebooks.ml';">HOME</button>
 </div>
 <button class="button-btn1" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login / Register
 </button>
 
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="https://srichaitanyaebooks.ml/login.php" method="GET">
+  <form class="modal-content animate" action="https://ebooks12452.000webhostapp.com/login.php" method="GET">
    
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       
@@ -282,27 +287,28 @@ button:hover {
         }}
 .footer {
    position: fixed;
+    color: white;
    left: 0;
-   bottom: 0;
+   bottom: 0px;
    width: 100%;
    background-color: #E94B3CFF;
-   color: white;
+    
+   
    text-align: center;
 }
     @media only screen and (max-width: 600px) {
             .footer{
                 font-size:13px;
                 font-weight: normal;
-                bottom:8%;
+                bottom:0;
             }
             }
 
 .btn-group1 button {
-position:relative;
-left:30px;
-  background-color: #4CAF50; /* Green background */
+  position:relative;
+  left:30px;
   font-size:20px;
-  
+  background-color: #4CAF50; /* Green background */
   border: 1px solid green; /* Green border */
   color: white; /* White text */
   margin: 20px;
@@ -312,6 +318,27 @@ left:30px;
   height:8%;  /* Set a width if needed */
   display: block; /* Make the buttons appear below each other */
 }
+    @media only screen and (max-width: 600px) {
+        .btn-group1 button{
+            position:relative;
+            top: 100px;
+            left:5px;
+  
+  font-size:20px;
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  margin: 20px;
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 90%;
+  height:8%;  /* Set a width if needed */
+  display: block; 
+ align-content: center;
+            justify-content: center;
+        }
+        }
+
 
 .btn-group1 button:not(:last-child) {
   border-bottom: none; /* Prevent double borders */
@@ -323,9 +350,43 @@ left:30px;
 }
 .heading1{
  color:white;
- padding-left:10%;
+ padding-left:12%;
  font-size :30px;
  }
+    @media only screen and (max-width: 600px) {
+        .heading1{
+            display:none;
+        }
+        }
+    .heading2{
+        display: none;
+        position: relative;
+        top:100px;
+        color:white;
+        font-size :30px;
+        text-align: center;
+
+ }
+    @media only screen and (max-width: 600px) {
+        .heading2{
+            display:block;
+            text-align: center;
+        }
+    }
+    .heading3{
+        display: none;
+        position: relative;
+        top:120px;
+ color:white;
+  font-size :40px;
+        text-align: center;
+
+ }
+    @media only screen and (max-width: 600px) {
+        .heading3{
+            display:block;
+        }
+        }
  
 </style>
 <body>
@@ -333,6 +394,9 @@ left:30px;
 <pre class="heading1" >Physics Integrated                              Physics Objective</pre>
 
 </div>
+    <div>
+    <h1 class="heading2">Maths Integrated</h1>
+    </div>
 <div class="btn-group1">
  <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II  Part-A</button>
   <button id="EFI">Electric Field</button>
@@ -361,7 +425,7 @@ left:30px;
 <style>
 .btn-group2 button {
 position:relative;
-top:-1520px;
+top:-1640px;
 left:800px;
 font-size:20px;
   background-color: #4CAF50; /* Green background */
@@ -374,6 +438,26 @@ font-size:20px;
   height:8%;  /* Set a width if needed */
   display: block; /* Make the buttons appear below each other */
 }
+    @media only screen and (max-width: 600px) {
+        .btn-group2 button{
+ position:relative;
+            left:5px;
+  top:150px;
+  font-size:20px;
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  margin: 20px;
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 90%;
+  height:8%;  /* Set a width if needed */
+  display: block;
+  align-content: center;
+  justify-content: center
+            
+        }
+        }
 
 .btn-group2 button:not(:last-child) {
   border-bottom: none; /* Prevent double borders */
@@ -384,6 +468,9 @@ font-size:20px;
   background-color: #3e8e41;
 }
 </style>
+    <div>
+    <h1 class="heading3">Maths Objective</h1>
+    </div>
 <div class="btn-group2">
   <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II Part-A</button>
   <button id="ESON" onclick="not()">Electrostatics</button>
