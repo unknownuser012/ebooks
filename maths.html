@@ -406,9 +406,9 @@ button:hover {
   <button id="TEI">Theory of Equations</button>
   <button id="PFI">Partial Fractions</button>
   <button id="CNI">Complex Numbers</button>
-  <button id="DTI">De-Movrie Theorm</button>
+  <button id="DTIN" onclick="not()">De-Movrie Theorm</button>
   <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II A Part-2</button>
-  <button id="BTI" >Binominal theorm</button>
+  <button id="BTIN" onclick="not()">Binominal theorm</button>
   <button id="PTI">Permutations</button>
   <button id="PBI">Probability</button>
   <button id="RVIN" onclick="not()">Random Variables</button>
@@ -558,24 +558,15 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
 	document.getElementById("CNI").addEventListener("click", function () {
         showPDF("https://srichaitanyaebooks.ml/ComplexNumbersIntegrated.pdf")
     });
-	document.getElementById("DTI").addEventListener("click", function () {
-        showPDF("https://srichaitanyaebooks.ml/.pdf")
-    });
-	document.getElementById("BTI").addEventListener("click", function () {
-        showPDF("https://srichaitanyaebooks.ml/.pdf")
-    });
+	
+	
 	document.getElementById("PTI").addEventListener("click", function () {
         showPDF("https://srichaitanyaebooks.ml/PermutationsIntegrated.pdf")
     });
 	document.getElementById("PBI").addEventListener("click", function () {
         showPDF("https://srichaitanyaebooks.ml/ProbabilityIntegrated.pdf")
     });
-	document.getElementById("RVI").addEventListener("click", function () {
-        showPDF("https://srichaitanyaebooks.ml/.pdf")
-    });
-	document.getElementById("STI").addEventListener("click", function () {
-        showPDF("https://srichaitanyaebooks.ml/.pdf")
-    });
+	
 	document.getElementById("CRI").addEventListener("click", function () {
         showPDF("https://srichaitanyaebooks.ml/CirclesIntegrated.pdf")
     });
@@ -585,12 +576,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
 	document.getElementById("PRI").addEventListener("click", function () {
         showPDF("https://srichaitanyaebooks.ml/ParabolaIntegrated.pdf")
     });
-	document.getElementById("EPI").addEventListener("click", function () {
-        showPDF("https://srichaitanyaebooks.ml/.pdf")
-    });
-	document.getElementById("HPI").addEventListener("click", function () {
-        showPDF("https://srichaitanyaebooks.ml/.pdf")
-    });
+	
 	document.getElementById("III").addEventListener("click", function () {
         showPDF("https://srichaitanyaebooks.ml/IndefiniteIntegralsIntegrated.pdf")
     });
@@ -603,9 +589,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
 	document.getElementById("DEI").addEventListener("click", function () {
         showPDF("https://srichaitanyaebooks.ml/DifferentialEquationsIntegrated.pdf")
     });
-	document.getElementById("QEO").addEventListener("click", function () {
-        showPDF("https://srichaitanyaebooks.ml/.pdf")
-    });
+	
 	document.getElementById("TEO").addEventListener("click", function () {
         showPDF("https://srichaitanyaebooks.ml/TheoryofEquationsObjective.pdf")
     });
@@ -615,9 +599,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
 	document.getElementById("CNO").addEventListener("click", function () {
         showPDF("https://srichaitanyaebooks.ml/ComplexNumbersObjective.pdf")
     });
-	document.getElementById("SSO").addEventListener("click", function () {
-        showPDF("https://srichaitanyaebooks.ml/.pdf")
-    });
+	
 	document.getElementById("MRO").addEventListener("click", function () {
         showPDF("https://srichaitanyaebooks.ml/MathematicalReasoningObjective.pdf")
     });
@@ -651,12 +633,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
 	document.getElementById("PRO").addEventListener("click", function () {
         showPDF("https://srichaitanyaebooks.ml/ParabolaObjective.pdf")
     });
-	document.getElementById("EPO").addEventListener("click", function () {
-        showPDF("https://srichaitanyaebooks.ml/.pdf")
-    });
-	document.getElementById("HPO").addEventListener("click", function () {
-        showPDF("https://srichaitanyaebooks.ml/.pdf")
-    });
+	
 	document.getElementById("IIO").addEventListener("click", function () {
         showPDF("https://srichaitanyaebooks.ml/IndefiniteIntegralsObjective.pdf")
     });
