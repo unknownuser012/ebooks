@@ -1,9 +1,9 @@
 <html>
 <head>
-<title>Sri Chaitanya E-books</title>
+<title>Maths E-books</title>
 <link rel="shortcut icon"  href="https://srichaitanyaebooks.ml/icon.ico"/>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 
@@ -17,15 +17,33 @@ input[type=text], input[type=password] {
   border-radius: 7px;
   box-sizing: border-box;
 }
-.button1 {
+
+.button1-home {
   background-color: #E94B3CFF;
+  position:absolute;
+  left:60px;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 10%;
+  font-size:17px;
+  border-radius: 8px;
+    text-align: center;
 }
+    @media only screen and (max-width: 600px) {
+        .button1-home {
+            width:20%;
+            font-size:15px;
+            border-radius: 5px;
+            left:30px;
+            top:18%;
+            padding: 10px;
+            
+            
+        }
+        }
 /* Set a style for all buttons */
 .button-btn1 {
  background-color: #E94B3CFF;
@@ -35,26 +53,19 @@ input[type=text], input[type=password] {
   border: none;
   cursor: pointer;
   width: 100%;
- position: absolute;
-   top:28px;
-   left:1150px;
-  background-color: #E94B3CFF;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
+  position: relative;
+  top:0;
+  left:1180px;
   border-radius: 8px 8px;
-  cursor: pointer;
-  font-size:20px;
-  width: 100%
-      
+  font-size:15px;
+
  
 }
     @media only screen and (max-width: 600px) {
         .button-btn1{
             position: absolute;
-            top: 20%;
-            left: 55%;
+            top: 18%;
+            left: 63%;
             padding: 10px;
             font-size: 18px;
             
@@ -98,7 +109,7 @@ button:hover {
   text-align: center;
   margin: 24px 0 12px 0;
    border: none;
-  position: absolute;
+  position: relative;
   
 }
 
@@ -127,16 +138,17 @@ span.psw {
   background-color: rgba(0,0,0,0); /* Black w/ opacity */
   padding-top: 60px;
 }
-@media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
     .modal{
         width:130%;
         left:-80px;
     }
     }
+
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and cente#E94B3CFF */
   border: 1px solid #888;
   width: 60%; /* Could be more or less, depending on screen size */
 }
@@ -146,11 +158,11 @@ span.psw {
   position: absolute;
   right: 25px;
   top: 0px;
-  color: #4CAF50;
+  color: white;
   font-size: 50px;
   font-weight: bold;
 }
-@media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
     .close{
         right: 90px;
         top:60px;
@@ -158,9 +170,10 @@ span.psw {
         
     }
     }
+
 .close:hover,
 .close:focus {
-  color: red;
+  color: #E94B3CFF;
   cursor: pointer;
 }
 
@@ -192,12 +205,15 @@ span.psw {
 }
 </style>
 
-  <body>
+  <body style="background-color:black";>
 
 
 
 <div class="name" >
-<h1> Sri Chaitanya IInd year E-Books </h1>
+<h1> <a href="/index.html" style="text-decoration:none; color:white; font-size:35px; text-align: center;"> Sri Chaitanya IInd year E-Books </a></h1>
+</div>
+<div>
+<button class="button1-home" onclick="location.href='https://srichaitanyaebooks.ml';">HOME</button>
 </div>
 <button class="button-btn1" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login / Register
 </button>
@@ -212,12 +228,12 @@ span.psw {
 
     <div class="container1">
       <label for="Email"><b>E-mail or Phone Number</b></label>
-      <input type="text" placeholder="Email" name="Email" required>
+      <input type="text" placeholder="Email" name="Email" requi#E94B3CFF>
 
       <label for="1stpswd"><b>Password</b></label>
-      <input type="password" id="passwd" placeholder="Enter Password" name="1stpswd" required>
+      <input type="password" placeholder="Enter Password" name="1stpswd" requi#E94B3CFF>
         <label for="repeat-password"> <b> Repeat Password </b> </label>
-		<input type="password" placeholder="Repeat Password " name="2ndpswd" required>
+		<input type="password" placeholder="Repeat Password " name="2ndpswd" requi#E94B3CFF>
       <button class="button-btn2" type="submit">Register</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -253,143 +269,434 @@ window.onclick = function(event) {
   font-size: 20px;
 }
 
-body {
-    width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
-    margin: 0;
-    background-color: black;
-    overflow: hidden;
-}
 
-.container2 {
-    width: 100%;
-    height: 67%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-    @media only screen and (max-width: 600px) {
-        .container2{
-        height: 63%;
-        }
-        }
-
-.buttonHolder {
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.button-sub {
-    background-color: #4caf50;
-    border: none;
-    padding: 20px 100px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 25px;
-    border-radius: 10px;
-    margin: 10px auto;
-    cursor: pointer;
-    display: block;
-}
-    @media only screen and (max-width: 600px) {
-        .button-sub{
-            padding: 15px 90px;
-            font-size: 23px;
-            margin-bottom: 12px;
-        }
-        }
-.button2 {
-    background-color: #4CAF50;
-    border: none;
-    padding: 20px 90px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 25px;
-    border-radius: 10px;
-    margin: 10px auto;
-    cursor: pointer;
-    display: block;
-}
-    @media only screen and (max-width: 600px) {
-        .button2{
-            padding: 15px 80px;
-            font-size:23px;
-            margin-bottom: 12px;
-        }
-        }
-.button3 {
-    background-color: #4CAF50;
-    border: none;
-    padding: 18px 73px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 25px;
-    border-radius: 10px;
-    margin: 10px auto;
-    cursor: pointer;
-    display: block;
-}
-    @media only screen and (max-width: 600px) {
-        .button3{
-            font-size: 23px;
-            padding: 15px 62px;
-        }
-        }
 button:hover {
   opacity: 0.8;
 }
 
 .name{
    font-family:'Abel-regular';
-   font-size:25px;
+   font-size:18px;
    color:white; 
-   
-   padding-top:0.2px;
+   padding-left:30px;
+   padding-top:0.05px;
    text-align:center;
    
    
 }
     @media only screen and (max-width: 600px) {
         .name{
-            font-size: 20px;
+            font-size: 13px;
             text-align:center;
-            
-        }
-    }
-    
+        }}
 .footer {
    position: fixed;
+    color: white;
    left: 0;
-   bottom: 0;
+   bottom: 0px;
    width: 100%;
    background-color: #E94B3CFF;
-   color: white;
+    
+   
    text-align: center;
 }
-        @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
             .footer{
                 font-size:13px;
                 font-weight: normal;
-                bottom:5%;
+                bottom:0;
             }
             }
-</style>
 
-<div class="container2">
-    <div class="buttonHolder">
-        <button class="button-sub"  onclick="location.href='https://srichaitanyaebooks.ml/maths.html';" >MATHS📐</button>
-        <button class="button2"  onclick="location.href='https://srichaitanyaebooks.ml/physics.html';">PHYSICS🔭</button>
-        <button class="button3"  onclick="location.href='https://srichaitanyaebooks.ml/chemistry.html';">CHEMISTRY🧪</button>
-    </div>
+.btn-group1 button {
+  position:relative;
+  left:30px;
+  font-size:20px;
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  margin: 20px;
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 35%;
+  height:8%;  /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+}
+    @media only screen and (max-width: 600px) {
+        .btn-group1 button{
+            position:relative;
+            top: 100px;
+            left:5px;
+  
+  font-size:20px;
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  margin: 20px;
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 90%;
+  height:8%;  /* Set a width if needed */
+  display: block; 
+ align-content: center;
+            justify-content: center;
+        }
+        }
+
+
+
+.btn-group1 button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group1 button:hover {
+  background-color: #3e8e41;
+}
+.heading1{
+ color:white;
+ padding-left:12%;
+ font-size :30px;
+ }
+    @media only screen and (max-width: 600px) {
+        .heading1{
+            display:none;
+        }
+        }
+    .heading2{
+        display: none;
+        position: relative;
+        top:100px;
+        color:white;
+        font-size :30px;
+        text-align: center;
+
+ }
+    @media only screen and (max-width: 600px) {
+        .heading2{
+            display:block;
+            text-align: center;
+        }
+    }
+    .heading3{
+        display: none;
+        position: relative;
+        top:120px;
+ color:white;
+  font-size :30px;
+        text-align: center;
+
+ }
+    @media only screen and (max-width: 600px) {
+        .heading3{
+            display:block;
+        }
+        }
+</style>
+<body>
+<div>
+<pre class="heading1" >Maths Integrated                                Maths Objective</pre>
+
 </div>
+    <div>
+    <h1 class="heading2">Maths Objective</h1>
+    </div>
+<div class="btn-group1">
+  <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II A Part-1</button>
+  <button id="QEI">Quadratic Equations</button>
+  <button id="TEI">Theory of Equations</button>
+  <button id="PFI">Partial Fractions</button>
+  <button id="CNI">Complex Numbers</button>
+  <button id="DTIN" onclick="not()">De-Movrie Theorm</button>
+  <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II A Part-2</button>
+  <button id="BTIN" onclick="not()">Binominal theorm</button>
+  <button id="PTI">Permutations</button>
+  <button id="PBI">Probability</button>
+  <button id="RVIN" onclick="not()">Random Variables</button>
+  <button id="STIN" onclick="not()">Statistics</button>
+  <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II B Part-1</button>
+  <button id="CRI">Circles</button>
+  <button id="SCI">System of Circles</button>
+  <button id="PRI">Parabola</button>
+  <button id="EPIN" onclick="not()">Ellipse</button>
+  <button id="HPIN" onclick="not()">Hyperbola</button>
+  <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II B Part-2</button>
+  <button id="III">Indefinite Integrals</button>
+  <button id="DII">Definite Integrals</button>
+  <button id="ARI">Areas</button>
+  <button id="DEI">Differential Equations</button>
+   
+    
+ 
+</div>
+<style>
+.btn-group2 button {
+position:relative;
+top:-1640px;
+left:800px;
+font-size:20px;
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  margin: 20px;
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 35%;
+  height:8%;  /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+}
+    @media only screen and (max-width: 600px) {
+        .btn-group2 button{
+ position:relative;
+            left:5px;
+  top:120px;
+  font-size:20px;
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  margin: 20px;
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 90%;
+  height:8%;  /* Set a width if needed */
+  display: block;
+  align-content: center;
+  justify-content: center
+            
+        }
+        }
+
+.btn-group2 button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group2 button2:hover {
+  background-color: #3e8e41;
+}
+</style>
+    <div>
+    <h1 class="heading3">Maths Objective</h1>
+    </div>
+<div class="btn-group2">
+   <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II A Part-1</button>
+  <button id="QEON" onclick="not()">Quadratic Equations</button>
+  <button id="TEO">Theory of Equations</button>
+  <button id="PFO">Partial Fractions</button>
+  <button id="CNO">Complex Numbers</button>
+  <button id="SSON" onclick="not()">Sequence & Series</button>
+  <button id="MRO">Mathematical Reasoning</button>
+  <button id="LGO">Logarithms</button>
+   <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II A Part-2</button>
+  <button id="BTO">Binominal Theorm</button>
+  <button id="PTO">Permutations & Combinations</button>
+  <button id="PBO">Probability</button>
+  <button id="RVO">Random Variables</button>
+  <button id="STO">Statistics</button>
+  <button id="SEO">Sets</button>
+   <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II B Part-1</button>
+  <button id="CRO">Circles</button>
+  <button id="SCO">System of Circles</button>
+  <button id="PRO">Parabola</button>
+  <button id="EPON" onclick="not()">Ellipse</button>
+  <button id="HPON" onclick="not()">Hyperbola</button>
+   <button type="button" disabled="disabled" style="background-color:#E94B3CFF; font-size:25px; border: 0px " > Volume II B Part-2</button>
+  <button id="IIO">Indefinite Integrals</button>
+  <button id="DIO">Definite Integrals</button>
+  <button id="ILO">Integral as a Limit</button>
+  <button id="ARO">Areas</button>
+  <button id="DEO">Differential Equations</button>
+  <button style="opacity: 0;"></button>
+
+</div>
+
 <div class="footer">
   <p style="font-weight: bold;" >Created by a Frustated🔥 Sri Chaitanya Student.</p>
 </div>
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script>
+const clientId = "0ac17c895d3f4efc807501d03adbe09b";
+const viewerOptions = {
+    embedMode: "LIGHT_BOX",
+    defaultViewMode: "FIT_PAGE",
+    showDownloadPDF: false,
+    showPrintPDF: false
+};
+
+function fetchPDF(urlToPDF) {
+    return new Promise((resolve) => {
+        fetch(urlToPDF)
+            .then((resolve) => resolve.blob())
+            .then((blob) => {
+                resolve(blob.arrayBuffer());
+            })
+    })
+}
+
+function showPDF(urlToPDF) {
+    var adobeDCView = new AdobeDC.View({
+            clientId: clientId
+        });
+        var previewFilePromise = adobeDCView.previewFile(
+            {
+                content: { promise: fetchPDF(urlToPDF) },
+                metaData: { fileName: urlToPDF.split("/").slice(-1)[0] }
+            },
+            viewerOptions
+        );
+}
+
+document.addEventListener("adobe_dc_view_sdk.ready", function () {
+    document.getElementById("QEI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/QuadraticIntegrated.pdf")
+    });
+    document.getElementById("TEI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/TheoryofEquationsIntegrated.pdf")
+    });
+    document.getElementById("PFI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/PartialfractionsIntegrated.pdf")
+    });
+	document.getElementById("CNI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/ComplexNumbersIntegrated.pdf")
+    });
+	document.getElementById("DTI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+	document.getElementById("BTI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+	document.getElementById("PTI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/PermutationsIntegrated.pdf")
+    });
+	document.getElementById("PBI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/ProbabilityIntegrated.pdf")
+    });
+	document.getElementById("RVI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+	document.getElementById("STI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+	document.getElementById("CRI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/CirclesIntegrated.pdf")
+    });
+	document.getElementById("SCI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/SystemofCirclesIntegrated.pdf")
+    });
+	document.getElementById("PRI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/ParabolaIntegrated.pdf")
+    });
+	document.getElementById("EPI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+	document.getElementById("HPI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+	document.getElementById("III").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/IndefiniteIntegralsIntegrated.pdf")
+    });
+	document.getElementById("DII").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/DefiniteIntegralsIntegrated.pdf")
+    });
+	document.getElementById("ARI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/AreasIntegrated.pdf")
+    });
+	document.getElementById("DEI").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/DifferentialEquationsIntegrated.pdf")
+    });
+	document.getElementById("QEO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+	document.getElementById("TEO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/TheoryofEquationsObjective.pdf")
+    });
+	document.getElementById("PFO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/PartialfractionsObjective.pdf")
+    });
+	document.getElementById("CNO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/ComplexNumbersObjective.pdf")
+    });
+	document.getElementById("SSO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+	document.getElementById("MRO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/MathematicalReasoningObjective.pdf")
+    });
+	document.getElementById("LGO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/LogarithmsObjective.pdf")
+    });
+	document.getElementById("BTO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/BinominalTheormObjective.pdf")
+    });
+	document.getElementById("PTO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/PermutationsObjective.pdf")
+    });
+	document.getElementById("PBO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/ProbabilityObjective.pdf")
+    });
+	document.getElementById("RVO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/RandomVariableObjective.pdf")
+    });
+	document.getElementById("STO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/StatisticsObjective.pdf")
+    });
+	document.getElementById("SEO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/SetsObjective.pdf")
+    });
+	document.getElementById("CRO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/CirclesObjective.pdf")
+    });
+	document.getElementById("SCO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/SystemofCirclesObjective.pdf")
+    });
+	document.getElementById("PRO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/ParabolaObjective.pdf")
+    });
+	document.getElementById("EPO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+	document.getElementById("HPO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/.pdf")
+    });
+	document.getElementById("IIO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/IndefiniteIntegralsObjective.pdf")
+    });
+	document.getElementById("DIO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/DefiniteIntegralsObjective.pdf")
+    });
+	document.getElementById("ILO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/IntegrallimitObjective.pdf")
+    });
+	document.getElementById("ARO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/AreasObjective.pdf")
+    });
+	document.getElementById("DEO").addEventListener("click", function () {
+        showPDF("https://srichaitanyaebooks.ml/DifferentialEquationsObjective.pdf")
+    });
+	
+});
+
+// Add arrayBuffer if necessary i.e. Safari
+(function () {
+    if (Blob.arrayBuffer != "function") {
+        Blob.prototype.arrayBuffer = myArrayBuffer;
+    }
+
+    function myArrayBuffer() {
+        return new Promise((resolve) => {
+            let fileReader = new FileReader();
+            fileReader.onload = () => {
+                resolve(fileReader.result);
+            };
+            fileReader.readAsArrayBuffer(this);
+        });
+    }
+})();
+</script>
+<script>
+function not() {
+  alert("Sorry this PDF is not Avaliable now. It will be avaliable soon!.");
+}
+</script>
+
 </html>
